@@ -1,0 +1,45 @@
+body{
+    background-color: lightgrey;
+}
+
+p{
+    padding: 10px;
+    background-color:white;
+    border:10px solid;
+    border-color: midnightblue;
+    margin: auto 70px; /*Auto para centrar los elementos ya sea horizontal o vertical*/
+    text-align: center;
+}
+
+a:link{ /*PARA COLOR DE CLICK LINKS NO VISITADOS*/
+    color: forestgreen;
+    text-decoration: none; /*NO SUBRAYADO*/
+}
+
+a:visited{
+    color:lightcoral;
+    text-decoration: none
+}
+
+a:hover{ /*LO PASO POR ENCIMA, Y SE MUESTRA ELLO*/
+    color: darkorchid;
+    text-decoration:underline;
+}
+
+a:active{  /*AL DARLE CLICK // PSEUDO CLASES DE CSS*/
+    color: deeppink;
+}
+
+#a_boton:link, #a_boton:visited, #a_boton:hover{
+    background-color:whitesmoke;
+    padding: 10px;
+    margin: auto 25%;
+    text-decoration: none;
+    color: black;
+}
+
+#a_boton:hover{
+    background-color:lightcoral;
+    color:darkcyan;
+    font-weight:lighter;
+}

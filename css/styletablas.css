@@ -1,0 +1,32 @@
+body{
+    background-color:honeydew;
+}
+
+#container{
+    background-color:cornsilk;
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    /*Uniremos los encabezados que queremos, dos en 1 NOMBRE Y EDAD EN ID*/
+}
+
+table, th, td{
+    border:1px solid coral;
+    padding: 5px;
+    border-spacing: 3px; /*NO se visualiza con border-collapse: separate */
+}
+
+th{
+    background-color:tan;
+    color:whitesmoke;
+}
+ /*SELECCION DE REGLONES PARES E IMPARES ESTILOS DE TABLA */
+tr:nth-child(even){ /*PARES*/
+    background-color:lightcyan;
+}
+
+tr:nth-child(odd){ /*IMPARES*/
+    background-color:whitesmoke;
+}
