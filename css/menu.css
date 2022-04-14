@@ -1,0 +1,48 @@
+ul{
+    list-style-type: none; /*Eliminar viñetas*/
+    background-color:rgb(247, 195, 177);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul li{
+    float: left /*Elementos flotan a la izquierda y se acomodan a la derecha*/
+}
+
+/*CHEQUEA
+FLOAT
+DISPLAY
+OVERFLOW (Mantienes los elementos de manera independiente)*/
+
+li a{ /*Espacio indica dentro de*/
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px;
+}
+
+li a:hover{
+    background-color:palevioletred;
+    color:white;
+}
+
+ol{ /*AHORA LA LISTA ORDENADA*/
+    list-style: none;
+    counter-reset: contador;
+}
+
+ol li{
+    counter-increment:contador;
+}
+
+ol li::before{ /*Contenido textual ANTES y DESPUES*/
+    content: "Universidad " counter(contador) " ";
+    color:royalblue;
+    font-style: italic; /*CREAR VARIABLES DE INCREMENTO*/
+}
+
+ol li::after{
+    content: " Mamarre.";
+}
