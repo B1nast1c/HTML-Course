@@ -1,0 +1,21 @@
+#content{
+    color: tomato;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.container{
+    border: 10px solid #acacff;
+    background-color:seashell;
+    text-align: center;
+    margin: 10px 70px;
+
+}
+
+.container p{
+    color: midnightblue;
+}
+
+.container h1{
+    color: olivedrab;
+}
